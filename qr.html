@@ -3,79 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QR Codes</title>
-  <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: system-ui, sans-serif;
-      background: #f5f5f5;
-      color: #222;
-      padding: 2rem 1rem;
-    }
-
-    h1 {
-      font-size: 1.75rem;
-      font-weight: 700;
-      margin-bottom: 2rem;
-      text-align: center;
-    }
-
-    .qr-list {
-      display: flex;
-      flex-direction: column;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .qr-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-      background: #fff;
-      border-radius: 16px;
-      padding: 2rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      width: 100%;
-      max-width: 420px;
-    }
-
-    .qr-item h2 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      text-align: center;
-      word-break: break-all;
-      color: #444;
-    }
-
-    .qr-item img {
-      width: 100%;
-      max-width: 320px;
-      height: auto;
-      border-radius: 8px;
-      display: block;
-    }
-  </style>
+  <title>Example QR Codes</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>QR Codes</h1>
-  <div class="qr-list">
-    <div class="qr-item">
-      <h2>link-qr.png</h2>
-      <img src="data/link-qr.png" alt="link-qr">
+  <header>
+    <div class="header-inner">
+      <span class="site-title">QR Tools</span>
+      <nav>
+        <a href="index.html">← Scanner</a>
+      </nav>
     </div>
-    <div class="qr-item">
-      <h2>link-qr-with-qs.png</h2>
-      <img src="data/link-qr-with-qs.png" alt="link-qr-with-qs">
-    </div>
-    <div class="qr-item">
-      <h2>text-qr.png</h2>
-      <img src="data/text-qr.png" alt="text-qr">
+  </header>
+
+  <div class="page-container">
+    <h1>Example QR Codes</h1>
+    <div class="qr-list">
+      <div class="qr-item">
+        <h2>link-qr.png</h2>
+        <img src="data/link-qr.png" alt="link-qr">
+      </div>
+      <div class="qr-item">
+        <h2>link-qr-with-qs.png</h2>
+        <img src="data/link-qr-with-qs.png" alt="link-qr-with-qs">
+      </div>
+      <div class="qr-item">
+        <h2>text-qr.png</h2>
+        <img src="data/text-qr.png" alt="text-qr">
+      </div>
     </div>
   </div>
 </body>

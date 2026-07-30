@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <div class="header-inner">
+      <span class="site-title">QR Tools</span>
+      <nav>
+        <a href="qr.html">Example QR Codes</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
     <h1>QR Scanner</h1>
 
@@ -17,10 +26,7 @@
       <button id="stopBtn" hidden>Stop Scanning</button>
     </div>
 
-    <div id="result" hidden>
-      <p id="resultText"></p>
-      <button id="againBtn">Scan Again</button>
-    </div>
+    <div id="results" hidden></div>
 
     <p id="errorMsg"></p>
   </main>
