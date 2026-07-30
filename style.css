@@ -217,3 +217,11 @@ button:active {
   border-radius: 3px;
   display: block;
 }
+
+.qr-encoded {
+  font-size: 0.85rem;
+  color: #777;
+  word-break: break-all;
+  text-align: center;
+  margin-top: 0.25rem;
+}

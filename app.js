@@ -4,7 +4,6 @@ const results = document.getElementById('results');
 const errorMsg = document.getElementById('errorMsg');
 
 let scanner = null;
-let scanCount = 0;
 
 function setError(msg) {
   errorMsg.textContent = msg;
@@ -15,7 +14,6 @@ function clearError() {
 }
 
 function appendResult(text) {
-  scanCount++;
   results.hidden = false;
 
   const item = document.createElement('div');
@@ -23,7 +21,7 @@ function appendResult(text) {
 
   const numSpan = document.createElement('span');
   numSpan.className = 'result-num';
-  numSpan.textContent = `#${scanCount}`;
+  numSpan.textContent = '📷';
 
   const textEl = document.createElement('p');
   textEl.className = 'result-text';
@@ -41,7 +39,7 @@ function appendResult(text) {
 
   item.appendChild(numSpan);
   item.appendChild(textEl);
-  results.appendChild(item);
+  results.prepend(item);
 }
 
 async function startScanning() {
